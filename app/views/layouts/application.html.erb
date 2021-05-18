@@ -19,16 +19,16 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">Helios</a></h1>
+								<h1> <%= link_to "Helios", controller: "pages", action: "index" %>  </h1>
 							</header>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li> <%= link_to "Login", controller: "users", action: "login" %> </li>
 								<li>
-									<a href="#">Dropdown</a>
+									<%= link_to "About us", controller: "pages", action: "about_us" %> 
 									<ul>
 										<li><a href="#">Lorem ipsum dolor</a></li>
 										<li><a href="#">Magna phasellus</a></li>
@@ -45,7 +45,7 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li> <%= link_to "test", controller: "pages", action: "test" %> </li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
 								<li><a href="no-sidebar.html">No Sidebar</a></li>
 							</ul>
